@@ -1,6 +1,6 @@
 const Joi = require("joi");
 
-const registerSchema = Joi.object({
+const loginSchema = Joi.object({
   email: Joi.string()
     .regex(
       new RegExp(/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/)
